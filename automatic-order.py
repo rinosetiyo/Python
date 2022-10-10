@@ -67,4 +67,4 @@ elif size == "L":
     else:
         print(f"Your final bill is ${large_pizza}")
 else:
-    print("Invalid input")
+    print("Invalid input or Missing input")
