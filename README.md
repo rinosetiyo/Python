@@ -1,2 +1,2 @@
 # 100DaysPythonProject
-# This is project making for journey learning python
+This is project making for journey learning python
