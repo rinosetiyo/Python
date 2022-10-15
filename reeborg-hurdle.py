@@ -65,3 +65,35 @@ def step_forward():
         jump()
 while not at_goal():
     step_forward()
+
+# hurdle 4
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+def jump():
+    turn_left()
+    move()
+    turn_right()
+    move()
+    turn_right()
+    move()
+    turn_left()
+#front_is_clear() or wall_in_front(), at_goal()
+def step_by():
+    while not wall_in_front():
+        move()
+    while not front_is_clear():
+        turn_left()
+        move()
+        turn_right()
+    while not wall_in_front():
+        move()
+        turn_right()
+        if not front_is_clear():
+            turn_left()
+    if not front_is_clear():
+        turn_left()
+
+while not at_goal():
+    step_by()
